@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class='head_page'>
+    <h1>Create a Blog</h1>
+</div>
+<div>
+    <form method='post'>
+        <label>
+            New Blog Post:
+            <input id="text" type="text" name='title' value='{{titleb}}' />
+            <textarea rows = "20" cols = "100" name ='body'>{{bodyb}}</textarea>
+        </label>
+        <input type="submit" value='Create Post' />
+    </form>
+</div>
+{% endblock %}
